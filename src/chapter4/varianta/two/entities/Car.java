@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  *
- * @author SLAVA
+ * @author Sukhocheva Maryana
  */
 public class Car {
      public static final String NEW_LINE = System.getProperty("line.separator");
