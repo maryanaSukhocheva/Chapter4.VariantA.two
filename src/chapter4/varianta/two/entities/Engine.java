@@ -2,7 +2,7 @@ package chapter4.varianta.two.entities;
 
 /**
  *
- * @author SLAVA
+ * @author Sukhocheva Maryana
  */
 public class Engine extends CarPart {
     private final static String PART_TYPE = "Двигатель";
@@ -63,38 +63,20 @@ public class Engine extends CarPart {
         return cylinders;
     }
 
-
-    /**
-     * Starts engine if it's not running yet
-     */
-    public void start() {
-        if (!isRunning) {
-            System.out.println("Работает двигатель.");
-            this.isRunning = true;
-        } else {
-            System.out.println("Двигатель УЖЕ работает. Заводить не нужно.");
-        }
-    }
-
-    /**
+       /**
      * Returns state of engine (running or not)
      * @return - boolean running or not
      */
-    public boolean isRuning(){
+    public boolean isRunning(){
         return isRunning;
     }
 
-    /**
-     * Stops engine if it was running
-     */
-    public void stop(){
-        if (isRunning) {
-            System.out.println("Двигатель остановлен");
-            this.isRunning = false;
-        } else {
-            System.out.println("Двигатель не был заведен - останавливать не нужно.");
-        }
+    
+
+    public void setIsRunning(boolean isRunning) {
+        this.isRunning = isRunning;
     }
+   
 
     @Override
     public boolean equals(Object o) {

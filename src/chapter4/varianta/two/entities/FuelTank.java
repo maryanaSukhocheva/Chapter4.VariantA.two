@@ -4,7 +4,7 @@ import chapter4.varianta.two.action.Utils;
 
 /**
  *
- * @author SLAVA
+ * @author Sukhocheva Maryana
  */
 public class FuelTank extends CarPart {
     private int volume;
@@ -47,23 +47,13 @@ public class FuelTank extends CarPart {
         return this;
     }
 
+    public void setFilledTo(int filledTo) {
+        this.filledTo = filledTo;
+    }
+
    
 
-    /**
-     * Fills tank with given quantity if it's possible
-     * @param fuelQuantity - given int quantity in liters to fill
-     * @return - int resulting quantity after filling (or the same if filling didn't happened)
-     */
-    public int fill (int fuelQuantity) {
-        if (filledTo + fuelQuantity <= volume) {
-            filledTo +=fuelQuantity;
-            System.out.println("Топливо заправлено. Теперь в баке " + filledTo + " литров топлива.");
-            return filledTo;
-        } else {
-            System.out.println("Такое количество топлива не поместится в бак. Можно залить только " + String.valueOf(volume-filledTo));
-            return filledTo;
-        }
-    }
+
 
     // Getters
     public int getVolume() {

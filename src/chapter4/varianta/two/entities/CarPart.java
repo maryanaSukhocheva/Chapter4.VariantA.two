@@ -4,7 +4,7 @@ import chapter4.varianta.two.action.Utils;
 
 /**
  *
- * @author SLAVA
+ * @author Sukhocheva Maryana
  */
 public class CarPart {
      //protected int id;
